@@ -2,9 +2,6 @@ import { Icon } from "@iconify/react";
 import Link from "next/link";
 import Image from "next/image";
 import LogoDesktop from "../img/logo_desktop.svg";
-import ArrowDown from "../img/arrow_down.svg";
-
-// console.log(ArrowDown);
 
 const navSection = () => {
   const openSubMenu = (e: any) => {
