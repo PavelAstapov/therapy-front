@@ -17,6 +17,22 @@ module.exports = {
           accent: "#212367",
           neutral: "#3d4451",
           "base-100": "#ffffff",
+          '.btn': {
+            'height': '4rem',
+            'padding-left': '2rem',
+            'padding-right': '2rem',
+            'color': '#fff',
+            'text-transform': 'none',
+            'font-size': '1rem',
+            'line-height': '1.5rem',
+            'transition': '0.2s ease-in-out',
+            '@media (min-width: 1536px)': {
+              'font-size': '18px',
+            },
+            'hover': {
+              'box-shadow': '0px 0px 18px 0px rgba(34, 60, 80, 0.2)'
+            }
+          },
         },
       },
     ],
@@ -44,6 +60,7 @@ module.exports = {
       },
       spacing: {
         '90%': '90%',
+        '80%': '80%',
         '52px': '52px',
       },
       fontFamily: {
