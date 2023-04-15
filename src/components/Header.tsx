@@ -11,7 +11,7 @@ const NavSection = () => {
   return (
     <>
       <section className="w-full relative">
-        <div className="bg-dark-purple w-full py-5 lg:block hidden">
+        <div className="bg-dark-purple w-full py-5 xl:block hidden">
           <div className="flex mx-auto w-90% max-w-1560 justify-end gap-10">
             <div className="flex gap-2.5 items-center">
               <Icon
@@ -151,7 +151,9 @@ const NavSection = () => {
               </a>
             </li>
           </ul>
-          <button className="btn btn-primary mt-7">Afspraak maken</button>
+          <Link href="#" className="btn btn-primary mt-7 text-white">
+            Afspraak maken
+          </Link>
         </nav>
         <nav className="xl:hidden w-full mx-auto flex justify-end">
           <Link className="max-w-250px absolute left-0 top-2 z-10" href="/">

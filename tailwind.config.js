@@ -29,10 +29,49 @@ module.exports = {
             '@media (min-width: 1536px)': {
               'font-size': '18px',
             },
-            'hover': {
-              'box-shadow': '0px 0px 18px 0px rgba(34, 60, 80, 0.2)'
+            '@media (max-width: 1024px)': {
+              'font-size': '14px',
+              'height': '3rem',
+            },
+          },
+          '.btn:hover': {
+            'box-shadow': '0px 0px 18px 0px rgba(34, 60, 80, 0.3)',
+          },
+          '.btn-white': {
+            'color': '#2C2E80'
+          },
+          '.btn-white:hover': {
+            'background-color': "#e5e5e5",
+          },
+          '.btn-nav': {
+            'width': '80px',
+            'height': "80px",
+            'background-color': "#fff",
+            "display": 'flex',
+            'align-items': 'center',
+            'justify-content': 'center',
+            'transition': '0.2s ease-in-out',
+            'border-radius': '100%',
+            'z-index': '9',
+            '@media (max-width: 1536px)': {
+              'width': '50px',
+              'height': "50px",
+            },
+            '@media (max-width: 1024px)': {
+              'display': 'none',
+            },
+          },
+          '.btn-nav:hover': {
+            'background-color': "#2C2E80",
+            'box-shadow': '0px 0px 18px 0px rgba(34, 60, 80, 0.3)',
+            'svg path': {
+              'fill': "#fff",
+              'transition': '0.2s ease-in-out',
             }
           },
+          '.swiper-pagination-bullet': {
+            'background': '#CCD7FF',
+          }
         },
       },
     ],

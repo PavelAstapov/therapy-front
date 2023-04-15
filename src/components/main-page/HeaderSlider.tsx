@@ -1,33 +1,44 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Swiper as SwiperType, Navigation } from "swiper";
+import { Swiper as SwiperType, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
+import Link from "next/link";
 
 const HeaderSlider = () => {
   const swiperRef = useRef<SwiperType>();
   return (
-    <>
+    <header>
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Pagination]}
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
         }}
-        className="mySwiper h-[980px] bg-[#EFEEFF] relative bg-[url('/main-slider-bgr.png')]"
+        loop
+        pagination={true}
+        breakpoints={{
+          1025: {
+            pagination: true,
+          },
+        }}
+        className="xl:h-[980px] h-auto relative bg-[url('/main-slider-bgr.png')] bg-center bg-no-repeat bg-cover"
       >
         <SwiperSlide className="h-full">
-          <div className="h-auto pt-24 mx-auto w-80% flex justify-between items-center">
-            <div>
-              <h1 className="text-[80px] font-bold max-w-xl text-dark-purple leading-[98px]">
+          <div className="h-auto md:pt-24 pt-14 pb-32 xl:pb-0 mx-auto xl:w-80% w-90% flex flex-col md:flex-row gap-5 justify-between items-start md:items-center">
+            <div className="md:w-1/2 w-full">
+              <h1 className="2xl:text-[80px] md:text-[40px] text-[36px] font-bold max-w-xl text-dark-purple 2xl:leading-[98px] md:leading-normal leading-tight">
                 Last van pijn en klachten
               </h1>
-              <h3 className="text-[24px] font-medium max-w-[534px] text-[#4E4F84] mt-4 leading-10">
+              <h3 className="2xl:text-[24px] md:text-[18px] text-[15px] font-normal md:font-medium max-w-[534px] text-[#4E4F84] mt-4 2xl:leading-10 leading-normal">
                 Wij helpen u of uw kind graag bij lichamelijke klachten en
                 algemene vragen!
               </h3>
-              <button className="btn btn-primary mt-12">Afspraak maken</button>
+              <Link href="#" className="btn btn-primary mt-12 text-white">
+                Maak een afspraak
+              </Link>
             </div>
-            <div className="relative">
+            <div className="relative md:w-1/2 w-full md:mt-0 mt-11">
               <svg
                 className="absolute z-0 min-w-[105%] left-[-2.5%]"
                 fill="none"
@@ -115,8 +126,6 @@ const HeaderSlider = () => {
 
               <svg
                 className="relative z-10"
-                width="778"
-                height="718"
                 viewBox="0 0 778 718"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -169,15 +178,11 @@ const HeaderSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
-      <button onClick={() => swiperRef.current?.slidePrev()}>
+      <button
+        className="btn-nav absolute top-[50%] left-11"
+        onClick={() => swiperRef.current?.slidePrev()}
+      >
         <svg
           width="34"
           height="34"
@@ -187,11 +192,14 @@ const HeaderSlider = () => {
         >
           <path
             d="M21.9099 7.04102C22.204 7.03556 22.4925 7.12166 22.7356 7.2874C22.9786 7.45314 23.1641 7.69032 23.2665 7.96613C23.3688 8.24193 23.3829 8.54272 23.3067 8.82688C23.2306 9.11103 23.068 9.36449 22.8415 9.5522L14.1729 16.9733L22.8469 24.3944C23.0053 24.5099 23.1381 24.657 23.2369 24.8265C23.3356 24.9959 23.3982 25.1839 23.4206 25.3787C23.443 25.5736 23.4248 25.7709 23.3672 25.9583C23.3095 26.1458 23.2136 26.3192 23.0855 26.4677C22.9574 26.6162 22.7999 26.7365 22.623 26.8211C22.4461 26.9057 22.2536 26.9527 22.0576 26.9591C21.8616 26.9655 21.6664 26.9313 21.4843 26.8585C21.3022 26.7857 21.1372 26.6759 20.9996 26.5361L11.0834 18.0602C10.9275 17.927 10.8022 17.7616 10.7164 17.5753C10.6305 17.3891 10.5861 17.1864 10.5861 16.9813C10.5861 16.7762 10.6305 16.5736 10.7164 16.3873C10.8022 16.2011 10.9275 16.0356 11.0834 15.9024L20.9996 7.39976C21.2509 7.17604 21.5735 7.0489 21.9099 7.04102Z"
-            fill="white"
+            fill="#2C2E80"
           />
         </svg>
       </button>
-      <button onClick={() => swiperRef.current?.slideNext()}>
+      <button
+        className="btn-nav lg:block absolute top-[50%] right-11"
+        onClick={() => swiperRef.current?.slideNext()}
+      >
         <svg
           width="34"
           height="34"
@@ -205,7 +213,7 @@ const HeaderSlider = () => {
           />
         </svg>
       </button>
-    </>
+    </header>
   );
 };
 
