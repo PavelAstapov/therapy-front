@@ -59,7 +59,12 @@ const NavSection = () => {
             className="absolute left-0 mt-4 max-w-sm 2xl:max-w-none z-10"
             href="/"
           >
-            <Image className="w-full" src={LogoDesktop} alt="test" />
+            <Image
+              blurDataURL={LogoDesktop}
+              className="w-full"
+              src={LogoDesktop}
+              alt="test"
+            />
           </Link>
           <ul className="flex px-0 pt-11 gap-5 2xl:gap-11">
             <li className="relative group flex" tabIndex={0}>
@@ -187,21 +192,6 @@ const NavSection = () => {
                   fill="#2E3080"
                 />
               </svg>
-
-              {/* <div className="collapse-title p-5">
-                <svg
-                  width="40"
-                  height="26"
-                  viewBox="0 0 40 26"
-                  fill="none"
-                  className="peer-checked:hidden"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="40" height="3.5" rx="1" fill="#2E3080" />
-                  <rect y="11" width="40" height="3.5" rx="1" fill="#2E3080" />
-                  <rect y="22" width="40" height="3.5" rx="1" fill="#2E3080" />
-                </svg>
-              </div> */}
               <div className="collapse-content pb-0 pr-0 pl-5 w-full left-0 top-[64px] absolute bg-dark-purple z-10">
                 <ul className="[&>*]:text-white pt-1">
                   <li className="flex flex-wrap items-center justify-between">

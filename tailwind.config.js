@@ -69,6 +69,12 @@ module.exports = {
               'transition': '0.2s ease-in-out',
             }
           },
+          '.btn-nav-teams': {
+            'background-color': "#EBEBFF",
+            '@media (max-width: 1024px)': {
+              'display': 'flex',
+            },
+          },
           '.swiper-pagination-bullet': {
             'background': '#CCD7FF',
           }

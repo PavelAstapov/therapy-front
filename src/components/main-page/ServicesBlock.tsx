@@ -5,12 +5,11 @@ import S1 from "../../img/s1.svg";
 import S2 from "../../img/s2.svg";
 import S3 from "../../img/s3.svg";
 import S4 from "../../img/s4.svg";
-import Mask from "@/img/mask_2.png";
 import ImageTest from "@/img/test_img2.png";
 
 const ServicesBlock = () => {
   return (
-    <section className="bg-[url('/services-bgr.png')] bg-no-repeat bg-bottom bg-cover relative top-[-92px] pt-[152px] pb-40">
+    <section className="bg-[url('/services-bgr.png')] bg-no-repeat bg-bottom bg-cover relative mt-[-92px] pt-[152px] pb-48">
       <h3 className="text-white text-center md:text-5xl text-2xl font-semibold md:mb-16 mb-8">
         Wat we doen
       </h3>
@@ -100,7 +99,12 @@ const ServicesBlock = () => {
             />
           </svg>
 
-          <Image className="w-full relative mask2" src={ImageTest} alt="test" />
+          <Image
+            className="w-full relative mask2"
+            quality="80"
+            src={ImageTest}
+            alt="test"
+          />
         </div>
       </div>
     </section>
