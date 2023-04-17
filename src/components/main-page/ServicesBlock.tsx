@@ -9,7 +9,7 @@ import ImageTest from "@/img/test_img2.png";
 
 const ServicesBlock = () => {
   return (
-    <section className="bg-[url('/services-bgr.svg')] bg-no-repeat bg-bottom bg-cover relative pt-[152px] pb-48">
+    <section className="bg-[url('/services-bgr.svg')] bg-no-repeat bg-bottom bg-cover relative md:pt-[152px] pt-20 pb-48">
       <h3 className="mb-8 text-2xl font-semibold text-center text-white md:text-5xl md:mb-16">
         Wat we doen
       </h3>

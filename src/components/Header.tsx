@@ -164,7 +164,7 @@ const NavSection = () => {
           <Link className="absolute left-0 z-10 max-w-250px top-2" href="/">
             <Image src={LogoDesktop} className="w-full" alt="test" />
           </Link>
-          <div>
+          <div className="max-w-[70px]">
             <div className="static overflow-visible collapse">
               <input type="checkbox" className="peer" />
               <svg

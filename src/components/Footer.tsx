@@ -6,7 +6,7 @@ import LogoFooter from "../img/logo_footer.svg";
 const Footer = () => {
   return (
     <>
-      <footer className="md:bg-[url('/footer_bgr.svg')] bg-[url('/footer_bgr_mob.svg')] bg-no-repeat bg-top bg-cover bg pt-16 pb-8 mt-[130px]">
+      <footer className="md:bg-[url('/footer_bgr.svg')] bg-[url('/footer_bgr_mob.svg')] bg-no-repeat bg-top bg-cover bg pt-16 pb-8 md:mt-[130px] mt-10">
         <div className="w-90% max-w-1560 mx-auto">
           <div className="flex flex-col items-start justify-between gap-8 2xl:items-end xl:flex-row">
             <Link href="/" className="w-1/2 min-w-[205px] max-w-[508px]">

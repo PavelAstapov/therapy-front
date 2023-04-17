@@ -11,7 +11,7 @@ import { Icon } from "@iconify/react";
 const TeamsBlock = () => {
   const swiperSecondRef = useRef<SwiperType>();
   return (
-    <section className="xl:bg-[url('/team_bgr.svg')] bg-[url('/team_bgr_mob.svg')] bg-no-repeat bg-top md:bg-cover bg-contain relative md:pt-[185px] pt-[65px] mt-[117px] pb-10">
+    <section className="xl:bg-[url('/team_bgr.svg')] bg-[url('/team_bgr_mob.svg')] bg-no-repeat bg-top md:bg-cover bg-contain relative md:pt-[185px] pt-[65px] md:mt-[117px] mt-16 pb-10">
       <h3 className="mb-24 text-2xl font-semibold text-center text-dark-purple md:text-5xl md:mb-16">
         Ons team
       </h3>
