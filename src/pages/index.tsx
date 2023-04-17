@@ -1,6 +1,6 @@
+import Footer from "@/components/Footer";
 import NavSection from "@/components/Header";
 import HeaderSlider from "@/components/main-page/HeaderSlider";
-// import MapBlock from "@/components/main-page/MapBlock";
 import ModalVideo from "@/components/main-page/ModalVideo";
 import ReviewsBlock from "@/components/main-page/ReviewsBlock";
 import ServicesBlock from "@/components/main-page/ServicesBlock";
@@ -21,6 +21,7 @@ export default function Home() {
       <ModalVideo />
       <ReviewsBlock />
       <MapSection />
+      <Footer />
     </>
   );
 }

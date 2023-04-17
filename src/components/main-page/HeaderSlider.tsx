@@ -10,7 +10,7 @@ import Link from "next/link";
 const HeaderSlider = () => {
   const swiperRef = useRef<SwiperType>();
   return (
-    <header className="relative">
+    <header className="relative bg-dark-purple">
       <Swiper
         modules={[Navigation, Pagination]}
         onBeforeInit={(swiper) => {
@@ -23,11 +23,11 @@ const HeaderSlider = () => {
             pagination: true,
           },
         }}
-        className="2xl:h-[980px] h-auto relative bg-[url('/main-slider-bgr.png')] bg-center bg-no-repeat bg-cover"
+        className="2xl:h-[980px] h-auto relative bg-[url('/main-slider-bgr.svg')] bg-bottom bg-no-repeat bg-cover"
       >
         <SwiperSlide className="h-full">
           <div className="h-auto md:pt-24 pt-14 pb-32 2xl:pb-0 mx-auto xl:w-80% w-90% flex flex-col md:flex-row gap-5 justify-between items-start md:items-center">
-            <div className="md:w-1/2 w-full">
+            <div className="w-full md:w-1/2">
               <h1 className="2xl:text-[80px] md:text-[40px] text-[36px] font-bold max-w-xl text-dark-purple 2xl:leading-[98px] md:leading-normal leading-tight">
                 Last van pijn en klachten
               </h1>
@@ -35,11 +35,11 @@ const HeaderSlider = () => {
                 Wij helpen u of uw kind graag bij lichamelijke klachten en
                 algemene vragen!
               </h3>
-              <Link href="#" className="btn btn-primary mt-12 text-white">
+              <Link href="#" className="mt-12 text-white btn btn-primary">
                 Maak een afspraak
               </Link>
             </div>
-            <div className="relative md:w-1/2 w-full md:mt-0 mt-11">
+            <div className="relative w-full md:w-1/2 md:mt-0 mt-11">
               <svg
                 className="absolute z-0 min-w-[105%] left-[-2.5%]"
                 fill="none"
@@ -131,7 +131,7 @@ const HeaderSlider = () => {
                 src="/test_img.png"
                 sizes="100vw"
                 blurDataURL="/test_img.png"
-                className="mask1 relative z-10 w-full"
+                className="relative z-10 w-full mask1"
                 alt="test"
               />
             </div>
@@ -139,7 +139,7 @@ const HeaderSlider = () => {
         </SwiperSlide>
         <SwiperSlide className="h-full">
           <div className="h-auto md:pt-24 pt-14 pb-32 2xl:pb-0 mx-auto xl:w-80% w-90% flex flex-col md:flex-row gap-5 justify-between items-start md:items-center">
-            <div className="md:w-1/2 w-full">
+            <div className="w-full md:w-1/2">
               <h1 className="2xl:text-[80px] md:text-[40px] text-[36px] font-bold max-w-xl text-dark-purple 2xl:leading-[98px] md:leading-normal leading-tight">
                 Last van pijn en klachten
               </h1>
@@ -147,11 +147,11 @@ const HeaderSlider = () => {
                 Wij helpen u of uw kind graag bij lichamelijke klachten en
                 algemene vragen!
               </h3>
-              <Link href="#" className="btn btn-primary mt-12 text-white">
+              <Link href="#" className="mt-12 text-white btn btn-primary">
                 Maak een afspraak
               </Link>
             </div>
-            <div className="relative md:w-1/2 w-full md:mt-0 mt-11">
+            <div className="relative w-full md:w-1/2 md:mt-0 mt-11">
               <svg
                 className="absolute z-0 min-w-[105%] left-[-2.5%]"
                 fill="none"
@@ -243,7 +243,7 @@ const HeaderSlider = () => {
                 src="/test_img.png"
                 sizes="100vw"
                 blurDataURL="/test_img.png"
-                className="mask1 relative z-10 w-full"
+                className="relative z-10 w-full mask1"
                 alt="test"
               />
             </div>

@@ -11,8 +11,8 @@ import { Icon } from "@iconify/react";
 const TeamsBlock = () => {
   const swiperSecondRef = useRef<SwiperType>();
   return (
-    <section className="xl:bg-[url('/team_bgr.png')] bg-[url('/team_bgr_mob.png')] bg-no-repeat bg-top md:bg-cover bg-contain relative md:pt-[185px] pt-[65px] mt-[117px] pb-10">
-      <h3 className="text-dark-purple text-center md:text-5xl text-2xl font-semibold md:mb-16 mb-24">
+    <section className="xl:bg-[url('/team_bgr.svg')] bg-[url('/team_bgr_mob.svg')] bg-no-repeat bg-top md:bg-cover bg-contain relative md:pt-[185px] pt-[65px] mt-[117px] pb-10">
+      <h3 className="mb-24 text-2xl font-semibold text-center text-dark-purple md:text-5xl md:mb-16">
         Ons team
       </h3>
       <div className="relative">
@@ -55,7 +55,7 @@ const TeamsBlock = () => {
                   src="/test_person.png"
                   alt="test"
                   sizes="404px"
-                  className="rounded-full w-full "
+                  className="w-full rounded-full "
                   blurDataURL="/test_person.png"
                 />
               </div>
@@ -64,7 +64,7 @@ const TeamsBlock = () => {
                 className="w-full bg-dark-purple font-semibold ease-linear duration-300 items-center justify-between p-3 mt-6 rounded-full pr-2 pl-8 normal-case hover:bg-light-purple focus:bg-light-purple h-auto inline-flex gap-8 2xl:text-[30px] text-lg text-white"
               >
                 Onno Otten
-                <span className="rounded-full bg-white p-3 block">
+                <span className="block p-3 bg-white rounded-full">
                   <Icon
                     icon="material-symbols:mail-rounded"
                     color="#2C2E80"
@@ -84,7 +84,7 @@ const TeamsBlock = () => {
                   src="/test_person.png"
                   alt="test"
                   sizes="404px"
-                  className="rounded-full w-full "
+                  className="w-full rounded-full "
                   blurDataURL="/test_person.png"
                 />
               </div>
@@ -93,7 +93,7 @@ const TeamsBlock = () => {
                 className="w-full bg-dark-purple font-semibold ease-linear duration-300 items-center justify-between p-3 mt-6 rounded-full pr-2 pl-8 normal-case hover:bg-light-purple focus:bg-light-purple h-auto inline-flex gap-8 2xl:text-[30px] text-lg text-white"
               >
                 Onno Otten
-                <span className="rounded-full bg-white p-3 block">
+                <span className="block p-3 bg-white rounded-full">
                   <Icon
                     icon="material-symbols:mail-rounded"
                     color="#2C2E80"
@@ -113,7 +113,7 @@ const TeamsBlock = () => {
                   src="/test_person.png"
                   alt="test"
                   sizes="404px"
-                  className="rounded-full w-full "
+                  className="w-full rounded-full "
                   blurDataURL="/test_person.png"
                 />
               </div>
@@ -122,7 +122,7 @@ const TeamsBlock = () => {
                 className="w-full bg-dark-purple font-semibold ease-linear duration-300 items-center justify-between p-3 mt-6 rounded-full pr-2 pl-8 normal-case hover:bg-light-purple focus:bg-light-purple h-auto inline-flex gap-8 2xl:text-[30px] text-lg text-white"
               >
                 Onno Otten
-                <span className="rounded-full bg-white p-3 block">
+                <span className="block p-3 bg-white rounded-full">
                   <Icon
                     icon="material-symbols:mail-rounded"
                     color="#2C2E80"
@@ -142,7 +142,7 @@ const TeamsBlock = () => {
                   src="/test_person.png"
                   alt="test"
                   sizes="404px"
-                  className="rounded-full w-full "
+                  className="w-full rounded-full "
                   blurDataURL="/test_person.png"
                 />
               </div>
@@ -151,7 +151,7 @@ const TeamsBlock = () => {
                 className="w-full bg-dark-purple font-semibold ease-linear duration-300 items-center justify-between p-3 mt-6 rounded-full pr-2 pl-8 normal-case hover:bg-light-purple focus:bg-light-purple h-auto inline-flex gap-8 2xl:text-[30px] text-lg text-white"
               >
                 Onno Otten
-                <span className="rounded-full bg-white p-3 block">
+                <span className="block p-3 bg-white rounded-full">
                   <Icon
                     icon="material-symbols:mail-rounded"
                     color="#2C2E80"
@@ -171,7 +171,7 @@ const TeamsBlock = () => {
                   src="/test_person.png"
                   alt="test"
                   sizes="404px"
-                  className="rounded-full w-full "
+                  className="w-full rounded-full "
                   blurDataURL="/test_person.png"
                 />
               </div>
@@ -180,7 +180,7 @@ const TeamsBlock = () => {
                 className="w-full bg-dark-purple font-semibold ease-linear duration-300 items-center justify-between p-3 mt-6 rounded-full pr-2 pl-8 normal-case hover:bg-light-purple focus:bg-light-purple h-auto inline-flex gap-8 2xl:text-[30px] text-lg text-white"
               >
                 Onno Otten
-                <span className="rounded-full bg-white p-3 block">
+                <span className="block p-3 bg-white rounded-full">
                   <Icon
                     icon="material-symbols:mail-rounded"
                     color="#2C2E80"
@@ -225,7 +225,7 @@ const TeamsBlock = () => {
           </svg>
         </button>
       </div>
-      <div className="text-center mt-16">
+      <div className="mt-16 text-center">
         <Link
           href="#"
           className="btn bg-dark-purple mx-auto hover:bg-light-purple focus:bg-light-purple h-16 px-8 mt-6 text-dark-purple normal-case text-base 2xl:text-[18px]"

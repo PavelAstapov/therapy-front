@@ -10,8 +10,8 @@ const NavSection = () => {
 
   return (
     <>
-      <section className="w-full relative">
-        <div className="bg-dark-purple w-full py-5 xl:block hidden">
+      <section className="relative w-full">
+        <div className="hidden w-full py-5 bg-dark-purple xl:block">
           <div className="flex mx-auto w-90% max-w-1560 justify-end gap-10">
             <div className="flex gap-2.5 items-center">
               <Icon
@@ -21,7 +21,7 @@ const NavSection = () => {
                 height="20"
               />
               <a
-                className="font-medium  text-white leading-5"
+                className="font-medium leading-5 text-white"
                 href="tel:045 525 0116"
               >
                 045 525 0116
@@ -35,7 +35,7 @@ const NavSection = () => {
                 height="20"
               />
               <a
-                className="font-medium text-white leading-5"
+                className="font-medium leading-5 text-white"
                 href="mailto:info@debundeling.nl"
               >
                 info@debundeling.nl
@@ -48,7 +48,7 @@ const NavSection = () => {
                 width="20"
                 height="20"
               />
-              <p className="font-medium text-white leading-5">
+              <p className="font-medium leading-5 text-white">
                 Sint Gregoriuslaan 1a 6442 AE Brunssum
               </p>
             </div>
@@ -56,7 +56,7 @@ const NavSection = () => {
         </div>
         <nav className="mx-auto hidden xl:flex w-90% max-w-1560 items-start gap-52px justify-end">
           <Link
-            className="absolute left-0 mt-4 max-w-sm 2xl:max-w-none z-10"
+            className="absolute left-0 z-10 max-w-sm mt-4 2xl:max-w-none"
             href="/"
           >
             <Image
@@ -66,10 +66,10 @@ const NavSection = () => {
               alt="test"
             />
           </Link>
-          <ul className="flex px-0 pt-11 gap-5 2xl:gap-11">
-            <li className="relative group flex" tabIndex={0}>
+          <ul className="flex gap-5 px-0 pt-11 2xl:gap-11">
+            <li className="relative flex group" tabIndex={0}>
               <a
-                className="font-medium text-dark-purple text-base 2xl:text-2xl pb-11 flex items-center gap-2 hover:text-light-purple"
+                className="flex items-center gap-2 text-base font-medium text-dark-purple 2xl:text-2xl pb-11 hover:text-light-purple"
                 href="#"
               >
                 Klachten
@@ -88,10 +88,10 @@ const NavSection = () => {
                 </svg>
               </a>
 
-              <ul className="hidden group-hover:block absolute z-10 left-0 shadow-md max-w-sm min-w-max menu menu-compact w-auto top-14 bg-base-100 p-2 rounded-box text-2xl">
+              <ul className="absolute left-0 z-10 hidden w-auto max-w-sm p-2 text-2xl shadow-md group-hover:block min-w-max menu menu-compact top-14 bg-base-100 rounded-box">
                 <li>
                   <a
-                    className="font-medium text-dark-purple active:text-white text-base 2xl:text-2xl py-4"
+                    className="py-4 text-base font-medium text-dark-purple active:text-white 2xl:text-2xl"
                     href="#"
                   >
                     Kinderfysiotherapie
@@ -99,7 +99,7 @@ const NavSection = () => {
                 </li>
                 <li>
                   <a
-                    className="font-medium text-dark-purple active:text-white text-base 2xl:text-2xl py-4"
+                    className="py-4 text-base font-medium text-dark-purple active:text-white 2xl:text-2xl"
                     href="#"
                   >
                     Algemene fysiotherapie
@@ -107,7 +107,7 @@ const NavSection = () => {
                 </li>
                 <li>
                   <a
-                    className="font-medium text-dark-purple active:text-white text-base 2xl:text-2xl py-4"
+                    className="py-4 text-base font-medium text-dark-purple active:text-white 2xl:text-2xl"
                     href="#"
                   >
                     Manuele fysiotherapie
@@ -115,7 +115,7 @@ const NavSection = () => {
                 </li>
                 <li>
                   <a
-                    className="font-medium text-dark-purple active:text-white text-base 2xl:text-2xl py-4"
+                    className="py-4 text-base font-medium text-dark-purple active:text-white 2xl:text-2xl"
                     href="#"
                   >
                     Fysiotherapie voor ouderen
@@ -125,7 +125,7 @@ const NavSection = () => {
             </li>
             <li>
               <a
-                className="font-medium text-dark-purple text-base 2xl:text-2xl flex items-center gap-2 hover:text-light-purple"
+                className="flex items-center gap-2 text-base font-medium text-dark-purple 2xl:text-2xl hover:text-light-purple"
                 href="#"
               >
                 Specialisaties
@@ -133,7 +133,7 @@ const NavSection = () => {
             </li>
             <li>
               <a
-                className="font-medium text-dark-purple text-base 2xl:text-2xl flex items-center gap-2 hover:text-light-purple"
+                className="flex items-center gap-2 text-base font-medium text-dark-purple 2xl:text-2xl hover:text-light-purple"
                 href="#"
               >
                 Locaties
@@ -141,7 +141,7 @@ const NavSection = () => {
             </li>
             <li>
               <a
-                className="font-medium text-dark-purple text-base 2xl:text-2xl flex items-center gap-2 hover:text-light-purple"
+                className="flex items-center gap-2 text-base font-medium text-dark-purple 2xl:text-2xl hover:text-light-purple"
                 href="#"
               >
                 Tarieven
@@ -149,30 +149,30 @@ const NavSection = () => {
             </li>
             <li>
               <a
-                className="font-medium text-dark-purple text-base 2xl:text-2xl flex items-center gap-2 hover:text-light-purple"
+                className="flex items-center gap-2 text-base font-medium text-dark-purple 2xl:text-2xl hover:text-light-purple"
                 href="#"
               >
                 Over ons
               </a>
             </li>
           </ul>
-          <Link href="#" className="btn btn-primary mt-7 text-white">
+          <Link href="#" className="text-white btn btn-primary mt-7">
             Afspraak maken
           </Link>
         </nav>
-        <nav className="xl:hidden w-full mx-auto flex justify-end">
-          <Link className="max-w-250px absolute left-0 top-2 z-10" href="/">
+        <nav className="flex justify-end w-full mx-auto xl:hidden">
+          <Link className="absolute left-0 z-10 max-w-250px top-2" href="/">
             <Image src={LogoDesktop} className="w-full" alt="test" />
           </Link>
           <div>
-            <div className="collapse overflow-visible static">
+            <div className="static overflow-visible collapse">
               <input type="checkbox" className="peer" />
               <svg
                 width="40"
                 height="26"
                 viewBox="0 0 40 26"
                 fill="none"
-                className="collapse-title p-5 peer-checked:hidden"
+                className="p-5 collapse-title peer-checked:hidden"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect width="40" height="3.5" rx="1" fill="#2E3080" />
@@ -183,7 +183,7 @@ const NavSection = () => {
                 width="40"
                 height="40"
                 viewBox="0 0 40 40"
-                className="collapse-title p-5 hidden peer-checked:block"
+                className="hidden p-5 collapse-title peer-checked:block"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -192,7 +192,7 @@ const NavSection = () => {
                   fill="#2E3080"
                 />
               </svg>
-              <div className="collapse-content pb-0 pr-0 pl-5 w-full left-0 top-[64px] absolute bg-dark-purple z-10">
+              <div className="collapse-content pb-0 pr-0 pl-5 w-full left-0 top-[64px] absolute bg-dark-purple z-10 shadow-lg">
                 <ul className="[&>*]:text-white pt-1">
                   <li className="flex flex-wrap items-center justify-between">
                     <Link className="text-[22px]" href="#">
@@ -370,17 +370,17 @@ const NavSection = () => {
                 </p>
                 <Link
                   href="#"
-                  className="btn bg-white hover:bg-light-purple focus:bg-light-purple h-16 px-8 mt-6 text-dark-purple normal-case text-base 2xl:text-[18px]"
+                  className="btn btn-white bg-white focus:bg-light-purple h-16 px-8 mt-6 normal-case text-base 2xl:text-[18px]"
                 >
                   Maak afspraak
                 </Link>
                 <hr className="relative w-[110%] mt-9 mb-9 left-[-20px] opacity-20" />
                 <a
                   href="tel:045 525 0116"
-                  className="btn bg-white p-3 pl-6 hover:bg-light-purple focus:bg-light-purple hover:text-white h-auto inline-flex gap-8 text-[18px] text-dark-purple"
+                  className="bg-white rounded-lg font-medium items-center p-3 pl-6 hover:bg-light-purple focus:bg-light-purple hover:text-white h-auto inline-flex gap-8 text-[18px] text-dark-purple"
                 >
                   045 525 0116
-                  <span className="rounded-lg bg-dark-purple p-3 block">
+                  <span className="block p-3 rounded-lg bg-dark-purple">
                     <Icon
                       icon="ic:baseline-local-phone"
                       color="white"
@@ -390,11 +390,11 @@ const NavSection = () => {
                   </span>
                 </a>
                 <a
-                  href="mail:info@debundeling.nl"
-                  className="btn bg-white p-3 pl-6 mt-6 normal-case hover:bg-light-purple focus:bg-light-purple hover:text-white h-auto inline-flex gap-8 text-[18px] text-dark-purple"
+                  href="mailto:info@debundeling.nl"
+                  className="bg-white rounded-lg font-medium items-center p-3 pl-6 mt-6 normal-case hover:bg-light-purple focus:bg-light-purple hover:text-white h-auto inline-flex gap-8 text-[18px] text-dark-purple"
                 >
                   info@debundeling.nl
-                  <span className="rounded-lg bg-dark-purple p-3 block">
+                  <span className="block p-3 rounded-lg bg-dark-purple">
                     <Icon
                       icon="material-symbols:mail-rounded"
                       color="white"
@@ -403,7 +403,7 @@ const NavSection = () => {
                     />
                   </span>
                 </a>
-                <div className="flex mt-10 gap-4">
+                <div className="flex gap-4 mt-10">
                   <a
                     href="#"
                     className="w-[60px] h-[60px] rounded-full bg-white/10 flex items-center justify-center"

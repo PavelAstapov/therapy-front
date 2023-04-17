@@ -95,6 +95,10 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      screens: {
+        '2xl': '1850px',
+        // => @media (min-width: 992px) { ... }
+      },
       colors: {
         'dark-purple': '#2C2E80',
         'light-purple': '#4C4FCE',

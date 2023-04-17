@@ -9,8 +9,8 @@ import ImageTest from "@/img/test_img2.png";
 
 const ServicesBlock = () => {
   return (
-    <section className="bg-[url('/services-bgr.png')] bg-no-repeat bg-bottom bg-cover relative mt-[-92px] pt-[152px] pb-48">
-      <h3 className="text-white text-center md:text-5xl text-2xl font-semibold md:mb-16 mb-8">
+    <section className="bg-[url('/services-bgr.svg')] bg-no-repeat bg-bottom bg-cover relative pt-[152px] pb-48">
+      <h3 className="mb-8 text-2xl font-semibold text-center text-white md:text-5xl md:mb-16">
         Wat we doen
       </h3>
       <div className="flex justify-between 2xl:gap-[176px] md:gap-16 gap-[unset] gap-y-10 items-start mx-auto w-90% max-w-1560 xl:flex-nowrap flex-wrap">
@@ -81,7 +81,7 @@ const ServicesBlock = () => {
           </p>
           <Link
             href="#"
-            className="btn btn-white bg-white text-dark-purple mt-14"
+            className="bg-white btn btn-white text-dark-purple mt-14"
           >
             Bekijk meer
           </Link>
@@ -100,7 +100,7 @@ const ServicesBlock = () => {
           </svg>
 
           <Image
-            className="w-full relative mask2"
+            className="relative w-full mask2"
             quality="80"
             src={ImageTest}
             alt="test"

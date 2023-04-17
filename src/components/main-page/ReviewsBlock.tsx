@@ -4,7 +4,7 @@ import Link from "next/link";
 const ModalVideo = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <section className="relative pt-24 pb-10 w-90% max-w-1560 mx-auto">
+    <section className="relative md:pt-24 pt-14 pb-10 w-90% max-w-1560 mx-auto">
       <div className="w-full flex xl:gap-[116px] gap-11 xl:flex-row flex-col-reverse">
         <div className="xl:w-full w-[95%] mx-auto xl:max-w-[801px] relative before:content-[''] before:block before:rounded-full before:h-full before:w-full before:absolute lg:before:left-[-37px] before:left-[-15px] lg:before:top-[-16px] before:top-[-8px] before:bg-transparent before:border before:border-[#5EB349] before:z-[-1] ">
           <div className="bg-[#5EB349] z-10 rounded-full lg:pt-[60px] lg:pb-10 pt-7 pb-6 flex relative items-center flex-col">
@@ -49,7 +49,7 @@ const ModalVideo = () => {
           <svg
             height="63"
             viewBox="0 0 512 63"
-            className="w-full max-w-[512px]"
+            className="w-full md:max-w-[512px] max-w-[266px]"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
