@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "node_modules/react-modal-video/css/modal-video.css";
-@import "node_modules/leaflet/dist/leaflet.css";
+/* @import "node_modules/react-modal-video/css/modal-video.css"; */
+/* @import "node_modules/leaflet/dist/leaflet.css"; */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -82,7 +82,7 @@ header .swiper .swiper-pagination {
   background-position: 95% 23%;
 }
 
-.modal-video-body {
+body .modal-video-body {
   max-width: 1560px;
 }
 

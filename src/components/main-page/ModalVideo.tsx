@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ModalVideoBlock from "react-modal-video";
+import 'node_modules/react-modal-video/scss/modal-video.scss';
 
 const ModalVideo = () => {
   const [isOpen, setOpen] = useState(false);
@@ -7,7 +8,7 @@ const ModalVideo = () => {
     <section className="relative pt-10 pb-10 w-90% max-w-1560 mx-auto">
       <div className="bg-[url('/video_bgr.png')] flex items-center mx-auto max-h-[750px] pl-[14.5%] bg-no-repeat bg-center bg-cover aspect-video w-full max-w-1560 rounded-full">
         <button
-          className="relative flex flex-col lg:gap-6 gap-1"
+          className="relative flex flex-col gap-1 lg:gap-6"
           onClick={() => setOpen(true)}
         >
           <span className="lg:w-[240px] lg:h-[240px] w-[54px] h-[54px] left-auto right-auto z-0 absolute rounded-full animate-ping bg-[#C2D3E4]" />
@@ -140,7 +141,7 @@ const ModalVideo = () => {
               </radialGradient>
             </defs>
           </svg>
-          <p className="lg:text-5xl text-sm font-semibold">Bekijk video</p>
+          <p className="text-sm font-semibold lg:text-5xl">Bekijk video</p>
         </button>
       </div>
       <ModalVideoBlock

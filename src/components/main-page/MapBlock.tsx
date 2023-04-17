@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-// import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { Icon } from "@iconify/react";
-// import marker from "/map_marker.svg";
+import "node_modules/leaflet/dist/leaflet.css";
 
 const MapBlock = () => {
   const defaultPosition = {
